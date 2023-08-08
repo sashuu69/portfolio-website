@@ -15,7 +15,8 @@ This Portfolio Webser is a protfolio website of Sashwat K developed using Python
 2. Create python virtual environment using the command `virtualenv portfolio_env`.
 3. Active the virtual environment using the command `source portfolio_env/bin/activate`.
 4. Install necessary python packages using the command `pip3 install -r requirements.txt`.
-5. To run the flask app, run the command `python3 app.py`
+5. To run the flask app, run the command `python3 app.py`.
+6. To test production wsgi, run the command `./runner.sh`.
 
 ## Contributors
 
