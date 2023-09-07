@@ -1,0 +1,60 @@
+name: Update Submodule and Raise PR
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-submodule-and-raise-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          repository: github.com/sashuu69/portfolio-website-docker-compose
+          submodules: 'recursive'
+
+      - name: Update submodule
+        run: |
+          git submodule update --remote --recursive
+          git add .
+          git commit -m "Update submodule"
+          git push
+
+      - name: Create PR
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: currentRepo } = await github.repos.get({ owner: context.repo.owner, repo: context.repo.repo });
+            const { data: targetRepo } = await github.repos.get({ owner: 'sashuu69', repo: 'portfolio-website-docker-compose' });
+
+            const newBranchName = `update-submodule-${Date.now()}`;
+            const base = 'main';
+
+            const { data: newBranch } = await github.git.createRef({
+              owner: 'sashuu69',
+              repo: 'portfolio-website-docker-compose',
+              ref: `refs/heads/${newBranchName}`,
+              sha: currentRepo.default_branch,
+            });
+
+            await github.git.updateRef({
+              owner: 'sashuu69',
+              repo: 'portfolio-website-docker-compose',
+              ref: `refs/heads/${base}`,
+              sha: targetRepo.default_branch,
+            });
+
+            const { data: pr } = await github.pulls.create({
+              owner: 'sashuu69',
+              repo: 'portfolio-website-docker-compose',
+              title: 'Update submodule',
+              head: `${targetRepo.owner}:${newBranchName}`,
+              base: base,
+              body: 'This PR updates the submodule.',
+            });
+
+            core.setOutput('pr_url', pr.html_url);
