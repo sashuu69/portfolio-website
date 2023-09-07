@@ -21,11 +21,13 @@ jobs:
         run: echo "::set-output name=timestamp::$(date +"%Y%m%d%H%M%S")"
 
       - name: Create branch with timestamp
-        run: |
-          timestamp=$(echo ${{ steps.datetime.outputs.timestamp }})
-          branch_name="feature/update-submodule-${timestamp}"
-          git checkout -b $branch_name
-          git push origin $branch_name
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run: |
+            timestamp=$(echo ${{ steps.datetime.outputs.timestamp }})
+            branch_name="feature/update-submodule-${timestamp}"
+            git checkout -b $branch_name
+            git push origin $branch_name
 
       - name: Update submodule
         run: |
