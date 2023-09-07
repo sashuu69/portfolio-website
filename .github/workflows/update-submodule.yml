@@ -1,4 +1,4 @@
-name: Update Submodule and Raise PR
+name: Create Branch, Update Submodule, and Raise PR
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  update-submodule-and-raise-pr:
+  create-branch-update-submodule-raise-pr:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,10 +16,19 @@ jobs:
           repository: sashuu69/portfolio-website-docker-compose
           submodules: 'recursive'
 
+      - name: Get current date and time
+        id: datetime
+        run: echo "::set-output name=timestamp::$(date +"%Y%m%d%H%M%S")"
+
+      - name: Create branch with timestamp
+        run: |
+          timestamp=$(echo ${{ steps.datetime.outputs.timestamp }})
+          branch_name="feature/update-submodule-${timestamp}"
+          git checkout -b $branch_name
+          git push origin $branch_name
+
       - name: Update submodule
         run: |
-          git config --global user.email "sashwat0001@gmail.com"
-          git config --global user.name "Sashwat K"
           git submodule update --remote --recursive
           git add .
           git commit -m "Update submodule"
@@ -31,30 +40,22 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { data: currentRepo } = await github.repos.get({ owner: context.repo.owner, repo: context.repo.repo });
-            const { data: targetRepo } = await github.repos.get({ owner: 'sashuu69', repo: 'portfolio-website-docker-compose' });
 
-            const newBranchName = `update-submodule-${Date.now()}`;
-            const base = 'main';
+            const branchName = `feature/update-submodule-${context.runNumber}`;  // Use the run number for the branch name
+            const base = 'main'; // Replace with the desired base branch for the pull request
 
             const { data: newBranch } = await github.git.createRef({
-              owner: 'sashuu69',
-              repo: 'portfolio-website-docker-compose',
-              ref: `refs/heads/${newBranchName}`,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/heads/${branchName}`,
               sha: currentRepo.default_branch,
             });
 
-            await github.git.updateRef({
-              owner: 'sashuu69',
-              repo: 'portfolio-website-docker-compose',
-              ref: `refs/heads/${base}`,
-              sha: targetRepo.default_branch,
-            });
-
             const { data: pr } = await github.pulls.create({
-              owner: 'sashuu69',
-              repo: 'portfolio-website-docker-compose',
+              owner: context.repo.owner,
+              repo: context.repo.repo,
               title: 'Update submodule',
-              head: `${targetRepo.owner}:${newBranchName}`,
+              head: `${context.repo.owner}:${branchName}`,
               base: base,
               body: 'This PR updates the submodule.',
             });
