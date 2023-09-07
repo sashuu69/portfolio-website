@@ -24,6 +24,8 @@ jobs:
         run: |
           timestamp=$(echo ${{ steps.datetime.outputs.timestamp }})
           branch_name="feature/update-submodule-${timestamp}"
+          git config credential.helper "store --file=.git/credentials"
+          echo "https://github.com:${{ secrets.GITHUB_TOKEN }}" > .git/credentials
           git checkout -b $branch_name
           git push origin $branch_name
 
