@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          repository: github.com/sashuu69/portfolio-website-docker-compose
+          repository: sashuu69/portfolio-website-docker-compose
           submodules: 'recursive'
 
       - name: Update submodule
