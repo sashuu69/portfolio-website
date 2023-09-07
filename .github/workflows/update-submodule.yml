@@ -18,6 +18,8 @@ jobs:
 
       - name: Update submodule
         run: |
+          git config --global user.email "sashwat0001@gmail.com"
+          git config --global user.name "Sashwat K"
           git submodule update --remote --recursive
           git add .
           git commit -m "Update submodule"
