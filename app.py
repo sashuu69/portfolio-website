@@ -22,7 +22,7 @@ def index() -> str:
     """Definition to render root HTML page"""
     return render_template('index.html', **DICTDATA)
 
-@app.route("/instagram_bio")
+@app.route("/bio_instagram")
 def instgram_bio_page() -> str:
     """Definition to render Instagram Bio HTML page"""
     return render_template("instagram_bio.html", **DICTDATA)
