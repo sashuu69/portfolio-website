@@ -1,5 +1,10 @@
 # Portfolio Webserver
 
+## Status
+![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fsashwat.in)
+[![Dockerfile Build CI](https://github.com/sashuu69/portfolio-website/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/sashuu69/portfolio-website/actions/workflows/docker-image.yml)
+[![Pylint](https://github.com/sashuu69/portfolio-website/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/sashuu69/portfolio-website/actions/workflows/pylint.yml)
+
 ## Introduction
 
 This Portfolio Webser is a protfolio website of Sashwat K developed using Python Flask.
