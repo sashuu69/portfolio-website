@@ -2,15 +2,15 @@
     "header": {
         "title": "Sashwat K",
         "meta": {
-            "description": "Welcome to Sashwat K's Website. Sashwat K is a Senior Engineer at IBM ISDL! Cloud Software Developer | FOSS | Linux Enthusiast | Embedded Firmware Developer | DevOps Engineer | Ham Radio Enthusiast",
+            "description": "Welcome to Sashwat K's Portfolio. Sashwat K is a Backend Developer @ IBM ISDL! Cloud Software Developer | Linux Enthusiast | Embedded Firmware Developer | DevOps Engineer | FOSS | Ham Radio Enthusiast",
             "author": "Sashwat K"
         }
     },
     "body": {
-        "designation": "Senior Engineer, IBM ISDL",
+        "designation": "Back End Engineer, IBM ISDL",
         "mail_id": "hi@sashwat.in",
         "address": "Based in Bangalore, India",
-        "copyrights": "2023 Sashwat K. All Rights Reserved",
+        "copyrights": "2024 Sashwat K. All Rights Reserved",
         "social_links": {
             "linkedin": "https://sashwat.in/linkedin",
             "github": "https://sashwat.in/github",
@@ -20,7 +20,7 @@
         },
         "section": {
             "hero": {
-                "tag_line": "An Entrepreneur, Tech Enthusiast, and Biker.",
+                "tag_line": "An Entrepreneur and Tech Enthusiast.",
                 "description": "Sashwat's expertise lies in software as he invests his time diligently in its development. During his free hours, he graciously imparts knowledge and indulges in crafting hardware projects. To soothe his mind and find tranquility, he takes pleasure in the therapeutic activities of biking and cycling.",
                 "flexes": {
                     "coding_hours": "40+",
@@ -30,7 +30,7 @@
             },
             "about": {
                 "about_tag_line": "Every great Idea begin with<br>an even <span>better story</span>",
-                "about_description": "Sashwat, an enterprising individual, currently holds the esteemed position of Senior Engineer at IBM ISDL, where he actively contributes to the development of products for IBM Cloud. His professional journey began as a CAD Infrastructure DevOps Engineer at Xilinx Inc. To know more about this career, refer his <a href='https://sashuu69.github.io/curriculum-vitae/sash-cv.pdf'>CV</a>.<br>Throughout his educational tenure, he immersed himself in various activities to hone his expertise in Python, Operating Systems, and PCB Designing. In parallel, he nurtured his entrepreneurial acumen by initiating and working on multiple startup ventures.<br>During his leisure time, Sashwat embraces a continuous pursuit of growth, dedicating himself to upgrading his skills, exploring ham radio, contributing to open source projects, and indulging in biking adventures. He is recognized as an SWL in the Ham Radio Community and holds membership in the esteemed group, <a href='http://www.rasahams.in/'>RASA Hams</a>, situated in Thiruvananthapuram, India. His passion for biking is evident as he actively participates in multiple biking groups, including <a href='https://www.instagram.com/thestreettriplers'>The Street Triplers</a> and <a href='https://www.instagram.com/the.superbikemafia/'>The Superbike Mafia</a>, as showcased on his Instagram accounts."
+                "about_description": "Sashwat, an enterprising individual, currently holds the esteemed position of Back End Engineer at IBM ISDL, where he actively contributes to the development of products for IBM Cloud. His professional journey began as a CAD Infrastructure DevOps Engineer at Xilinx Inc. To know more about this career, refer his <a href='https://sashuu69.github.io/curriculum-vitae/sash-cv.pdf'>CV</a>.<br>Throughout his educational tenure, he immersed himself in various activities to hone his expertise in Python, Operating Systems, and PCB Designing. In parallel, he nurtured his entrepreneurial acumen by initiating and working on multiple startup ventures.<br>During his leisure time, Sashwat embraces a continuous pursuit of growth, dedicating himself to upgrading his skills, exploring ham radio, contributing to open source projects, and indulging in biking adventures. He is recognized as an SWL in the Ham Radio Community and holds membership in the esteemed group, <a href='http://www.rasahams.in/'>RASA Hams</a>, situated in Thiruvananthapuram, India. His passion for biking is evident as showcased on his Instagram account."
             },
             "resume": {
                 "0": {
@@ -72,7 +72,7 @@
             "services": [
                 {
                     "title": "Backend Development",
-                    "description": "I have helped in designing backed for products using python and golag.",
+                    "description": "I have helped in designing backend for products using python and golang.",
                     "project_count": "24",
                     "icon": "code"
                 },
@@ -146,22 +146,28 @@
             ],
             "testimonials": [
                 {
-                    "photo": "https://media.licdn.com/dms/image/D5603AQFP3fXzUU51Cw/profile-displayphoto-shrink_800_800/0/1672634844064?e=1694044800&v=beta&t=GPhvFmyfXFg7olRpl67MG_eGahIXrVgxLK-uuMua14o",
+                    "photo": "gaurav.jepg",
+                    "username": "Gaurav Kumar",
+                    "designation": "Advisory Software Engineer @ IBM ISDL",
+                    "statement": "I have had the pleasure of working closely with Sashwat at IBM ISDL since June 2022, and I am pleased to recommend him as a highly proficient and dedicated professional. Sashwat is an expert in a wide range of technologies, including Python, Terraform, Golang, Linux, and Restful API's. He consistently demonstrates exceptional skills in these areas, contributing significantly to the success of our projects.Sashwat stands out for his ability to design and implement robust solutions, ensuring the reliability and efficiency of our systems. He has a deep understanding of python, utilizing it to develop scalable and maintainable code. His proficiency in Terraform has been invaluable in automating infrastructure deployment and management. In addition to his technical prowess, Sashwat is a reliable team player. He collaborates effectively with colleagues, providing valuable insights and solutions to complex challenges. His commitment to delivering high-quality work and meeting project deadlines is commendable. With Sashwat's expertise, our team has been able to navigate and implement cutting-edge technologies seamlessly. He has an excellent grasp of Golang, contributing to the development of efficient and performant applications. His proficiency in Linux administration has been pivotal in maintaining a stable and secure environment. Moreover, Sashwat has a solid understanding of Restful API's, enabling seamless communication between different components of our projects. His ability to design and implement RESTful services has greatly enhanced the functionality and interoperability of our systems. I have no doubt that Sashwat will be a valuable asset to any team or project fortunate enough to have him on board. He combines technical expertise with a collaborative spirit, making him an excellent colleague and contributor. I wholeheartedly recommend Sashwat for any role that demands a skilled professional with a proven track record in Python, Terraform, Golang, Linux, and Restful API's."
+                },
+                {
+                    "photo": "rohan.jpeg",
                     "username": "Rohan Giriraj",
                     "designation": "Software Engineer @ Autodesk",
                     "statement": "I've known Sashwat for about 7 years now, dating back to the first year of my undergrad. I've had the pleasure to work with him at Xilinx (now AMD) for about a year. Sashwat is a very hard working, technically sound engineer who ensures that all deliverables are achieved on time and with perfection. He's obsessed with quality and I've had the fortune of having many productive discussions with him on improving my code quality and documentation processes.<br>As a teammate Sashwat is always brimming with optimism and his energy is infectious to others working with him. He has inspired me and other teammates to do better and lead by example. He's always interested in learning the latest tools/languages/frameworks, getting better at the stack he already works on and is always looking to expand his knowledge.<br>Overall, he's a great engineer and above all, a good person."
                 },
                 {
-                    "photo": "https://media.licdn.com/dms/image/C5603AQG8aTUlcYjtaQ/profile-displayphoto-shrink_800_800/0/1621188199276?e=1694044800&v=beta&t=8qFn_okCld5O73nfjZuDorQPaIbJThoOEnDy32lSQ3k",
+                    "photo": "jishnu.jpeg",
                     "username": "Jishnu M",
                     "designation": "Software Engineer @ ECS Fin",
                     "statement": "I know Sashwat from our college days and now we are teammates at Xilinx. So I got plenty of chance to work closely with him. He's that kind of a person who's willing to take initiative and responsibility of his work. He's supportive and a good team player. He has also shown his managerial skills by hosting several meetings involving members from different teams. He has worked on several internal projects where his python skills have helped to automate so many tasks as well as develop multiple home brewed tools. He has created several new processes to the team which has added value to the team. One thing I can vouch for him is that he'll be a valuable asset to any team."
                 },
                 {
-                    "photo": "https://media.licdn.com/dms/image/D5603AQF28S_7TtCoJQ/profile-displayphoto-shrink_800_800/0/1675450638206?e=1694044800&v=beta&t=BW_ionv2bTJSjf2-qUqBfofbjrZAUj1ixrgRnTXMEJk",
+                    "photo": "alfin.jpeg",
                     "username": "Alfin William",
                     "designation": "DevOps Engineer @ Catalyca",
-                    "statement": "We’ve joined our hands on several projects in college, and Sashwat is one of the best people I had as a partner. I highly recommend his expertise in python and project management. He is one of the profound people I have met, and his ability to tackle any problem is remarkable and with a warm smile. Also, his passion towards IoT and building DIY's related to it is also a commendable feat. I'm sure Sashwat would become an appreciated member of any team."
+                    "statement": "We've joined our hands on several projects in college, and Sashwat is one of the best people I had as a partner. I highly recommend his expertise in python and project management. He is one of the profound people I have met, and his ability to tackle any problem is remarkable and with a warm smile. Also, his passion towards IoT and building DIY's related to it is also a commendable feat. I'm sure Sashwat would become an appreciated member of any team."
                 }
             ]
         },
