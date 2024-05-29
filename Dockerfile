@@ -1,6 +1,9 @@
 # start by pulling the python image
 FROM docker.io/python:3.9.6-alpine
 
+# add label for documentation
+LABEL maintainer="sashwat0001@gmail.com"
+
 # copy the requirements file into the image
 COPY ./requirements.txt /app/requirements.txt
 

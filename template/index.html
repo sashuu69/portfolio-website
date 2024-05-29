@@ -375,7 +375,7 @@
                                     <div class="testimonial-item">
                                         <div class="testimonial-item-inner">
                                             <div class="author d-flex align-items-center">
-                                                <img src="{{item.photo}}" alt="portfolio">
+                                                <img src="{{url_for('static', filename='images/testimonials/')}}{{item.photo}}" alt="portfolio">
                                                 <div class="right">
                                                     <h3>{{item.username}}</h3>
                                                     <p class="designation">{{item.designation}}</p>
