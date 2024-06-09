@@ -24,8 +24,8 @@ The Portfolio Website is a Python Flask application to host your portfolio.
 
 ## Development Setup
 
-1. Make sure `python3`, `pip3` and `virtualenv` is installed on the development setup.
-2. Create Python virtual environment using the command.
+1. Make sure `python3`, `pip3` and `virtualenv` are installed on the development setup.
+2. Create a Python virtual environment using the command.
     ```bash
     virtualenv portfolio_env
     ```
@@ -58,6 +58,6 @@ If you want to support me, donations will be helpful.
 
 ## Other Repos
 
-1. [sashuu69/portfolio-website-docker-compose](https://github.com/sashuu69/portfolio-website-docker-compose) - The docker-compose code to bring up portfolio website
+1. [sashuu69/portfolio-website-docker-compose](https://github.com/sashuu69/portfolio-website-docker-compose) - The docker-compose code to bring up the portfolio website
 2. [sashuu69/portfolio-website-infrastructure/](https://github.com/sashuu69/portfolio-website-infrastructure) - The terraform and ansible code to bring portfolio website on AWS
 3. [sashuu69/portfolio-website-ssl-cert-generator](https://github.com/sashuu69/portfolio-website-ssl-cert-generator) - The terraform code to generate/renew SSL certificates
