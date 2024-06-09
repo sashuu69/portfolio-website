@@ -341,6 +341,9 @@
                                             <img src="{{url_for('static', filename='images/portfolio/')}}{{item.project_img_path}}" alt="Portfolio">
         
                                             <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="{{item.github_link}}" target="_blank">GitHub</a>
+                                                </li>
                                                 {%for item1 in item.tags%}
                                                 <li>
                                                     <a href="">{{item1}}</a>

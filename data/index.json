@@ -2,12 +2,12 @@
     "header": {
         "title": "Sashwat K",
         "meta": {
-            "description": "Welcome to Sashwat K's Portfolio. Sashwat K is a Backend Developer @ IBM ISDL! Cloud Software Developer | Linux Enthusiast | Embedded Firmware Developer | DevOps Engineer | FOSS | Ham Radio Enthusiast",
+            "description": "Welcome to Sashwat K's Portfolio. Sashwat K is a Senior Engineer @ IBM ISDL! Backend Developer | Systems Engineer | Embedded Firmware Enthusiast | DevOps Engineer | FOSS | Ham Radio Enthusiast",
             "author": "Sashwat K"
         }
     },
     "body": {
-        "designation": "Back End Engineer, IBM ISDL",
+        "designation": "Senior Engineer, IBM ISDL",
         "mail_id": "hi@sashwat.in",
         "address": "Based in Bangalore, India",
         "copyrights": "2024 Sashwat K. All Rights Reserved",
@@ -20,7 +20,7 @@
         },
         "section": {
             "hero": {
-                "tag_line": "An Entrepreneur and Tech Enthusiast.",
+                "tag_line": "An Entrepreneur and A Tech Enthusiast.",
                 "description": "Sashwat's expertise lies in software as he invests his time diligently in its development. During his free hours, he graciously imparts knowledge and indulges in crafting hardware projects. To soothe his mind and find tranquility, he takes pleasure in the therapeutic activities of biking and cycling.",
                 "flexes": {
                     "coding_hours": "40+",
@@ -30,7 +30,7 @@
             },
             "about": {
                 "about_tag_line": "Every great Idea begin with<br>an even <span>better story</span>",
-                "about_description": "Sashwat, an enterprising individual, currently holds the esteemed position of Back End Engineer at IBM ISDL, where he actively contributes to the development of products for IBM Cloud. His professional journey began as a CAD Infrastructure DevOps Engineer at Xilinx Inc. To know more about this career, refer his <a href='https://sashuu69.github.io/curriculum-vitae/sash-cv.pdf'>CV</a>.<br>Throughout his educational tenure, he immersed himself in various activities to hone his expertise in Python, Operating Systems, and PCB Designing. In parallel, he nurtured his entrepreneurial acumen by initiating and working on multiple startup ventures.<br>During his leisure time, Sashwat embraces a continuous pursuit of growth, dedicating himself to upgrading his skills, exploring ham radio, contributing to open source projects, and indulging in biking adventures. He is recognized as an SWL in the Ham Radio Community and holds membership in the esteemed group, <a href='http://www.rasahams.in/'>RASA Hams</a>, situated in Thiruvananthapuram, India. His passion for biking is evident as showcased on his Instagram account."
+                "about_description": "Sashwat, an enterprising individual, currently holds the esteemed position of Senior Engineer at IBM ISDL, where he actively contributes to the development of products for IBM Cloud. His professional journey began as a CAD Infrastructure DevOps Engineer at Xilinx Inc. To know more about this career, refer his <a href='https://sashuu69.github.io/curriculum-vitae/sash-cv.pdf'>CV</a>.<br>Throughout his educational tenure, he immersed himself in various activities to hone his expertise in Python, Operating Systems, and PCB Designing. In parallel, he nurtured his entrepreneurial acumen by initiating and working on multiple startup ventures.<br>During his leisure time, Sashwat embraces a continuous pursuit of growth, dedicating himself to upgrading his skills, exploring ham radio, contributing to open source projects, and indulging in biking adventures. He is recognized as an SWL in the Ham Radio Community and holds membership in the esteemed group, <a href='http://www.rasahams.in/'>RASA Hams</a>, situated in Thiruvananthapuram, India. His passion for biking is evident as showcased on his Instagram account."
             },
             "resume": {
                 "0": {
@@ -65,7 +65,7 @@
                 },
                 "6": {
                     "timeline": "Jul 2022 - Present",
-                    "position": "Backend Engineer",
+                    "position": "Senior Engineer",
                     "company": "IBM ISDL"
                 }
             },
@@ -73,32 +73,32 @@
                 {
                     "title": "Backend Development",
                     "description": "I have helped in designing backend for products using python and golang.",
-                    "project_count": "24",
+                    "project_count": "10+",
                     "icon": "code"
                 },
                 {
                     "title": "DevOps Engineering",
-                    "description": "I have helped setup automation scripts using python and shell and pipeline using DevOps tools.",
-                    "project_count": "8",
+                    "description": "I have helped setup automation scripts using python, shell, terraform, ansible and pipeline using DevOps tools.",
+                    "project_count": "8+",
                     "icon": "infinity"
                 },
                 {
                     "title": "PCB Designing",
-                    "description": "I have designed PCBs for college and open-source projects.",
-                    "project_count": "10",
+                    "description": "I have designed PCBs in college and open-source projects.",
+                    "project_count": "5+",
                     "icon": "microchip"
                 }
             ],
             "skills": [
                 {
-                    "skill_name": "Python",
-                    "image_path": "python.png",
+                    "skill_name": "Go Lang",
+                    "image_path": "go.png",
                     "proficiency": "90%"
                 },
                 {
-                    "skill_name": "Go Lang",
-                    "image_path": "go.png",
-                    "proficiency": "80%"
+                    "skill_name": "Python",
+                    "image_path": "python.png",
+                    "proficiency": "90%"
                 },
                 {
                     "skill_name": "Git",
@@ -108,17 +108,17 @@
                 {
                     "skill_name": "Docker",
                     "image_path": "docker.png",
+                    "proficiency": "85%"
+                },
+                {
+                    "skill_name": "Terraform",
+                    "image_path": "terraform.png",
                     "proficiency": "80%"
                 },
                 {
-                    "skill_name": "Kubernetes",
-                    "image_path": "python.png",
-                    "proficiency": "90%"
-                },
-                {
-                    "skill_name": "EaglePCB",
-                    "image_path": "eaglepcb.jpg",
-                    "proficiency": "80%"
+                    "skill_name": "Ansible",
+                    "image_path": "ansible.png",
+                    "proficiency": "70%"
                 }
             ],
             "portfolio": [
@@ -130,18 +130,18 @@
                     "github_link": "https://github.com/sashuu69/pcb-business-card"
                 },
                 {
-                    "project_name": "IOT Water Level Indicator",
-                    "project_link": "https://github.com/sashuu69/iot-water-level-indicator",
-                    "project_img_path": "iot-water-level-indicator.jpg",
-                    "tags": ["eaglepcb", "pcb", "arduino", "python", "raspberry pi"],
-                    "github_link": "https://github.com/sashuu69/iot-water-level-indicator"
-                },
-                {
                     "project_name": "Arduino UNO clone for Industrial Purposes",
                     "project_link": "https://github.com/sashuu69/sph-mc-one",
                     "project_img_path": "sph-mc-one.jpg",
                     "tags": ["eaglepcb", "pcb", "atmega"],
                     "github_link": "https://github.com/sashuu69/sph-mc-one"
+                },
+                {
+                    "project_name": "Sashwat's Portfolio Website",
+                    "project_link": "https://sashwat.in",
+                    "project_img_path": "portfolio-website.jpg",
+                    "tags": ["python", "docker", "ansible", "terraform"],
+                    "github_link": "https://github.com/sashuu69/portfolio-website"
                 }
             ],
             "testimonials": [
